@@ -3,5 +3,18 @@
 #
 # Examples:
 #
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+# User.destroy_all
+# Artwork.destroy_all
+# ArtworkShare.destroy_all
+
+# (1..100).each do |t|
+#   User.create!(username: "User #{t}")
+# end
+# (201..300).each do |t|
+#   Artwork.create!(title: "Art #{t}", image_url: "artwork/#{t}", artist_id: t)
+# end
+
+
+# (201..300).each do |t|
+#   ArtworkShare.create!(artwork_id: t - 100, viewer_id: t)
+# end

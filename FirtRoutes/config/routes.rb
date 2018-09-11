@@ -9,4 +9,6 @@ Rails.application.routes.draw do
   get 'users/new', to: 'users#new', as: 'new_user'
   get 'users/:id/edit', to: 'users#edit', as: 'edit_user'
   put 'users/:id', to: 'users#update', as: 'putupdate_user'
+  
+  # resources :artwork_shares
 end
